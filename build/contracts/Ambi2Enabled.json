@@ -1,0 +1,27 @@
+{
+  "contract_name": "Ambi2Enabled",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_ambi2",
+          "type": "address"
+        }
+      ],
+      "name": "setupAmbi2",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b60c1806100186000396000f300606060405263ffffffff60e060020a6000350416637a386e8881146022575b6000565b346000576038600160a060020a0360043516604c565b604080519115158252519081900360200190f35b60008054600160a060020a0316156064575060006090565b506000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a03831617905560015b9190505600a165627a7a72305820f1c90eea952b1c556b70732eca72407235fac12100c1764bed23c8df039608f10029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1512568656938
+}

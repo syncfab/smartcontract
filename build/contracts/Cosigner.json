@@ -1,0 +1,30 @@
+{
+  "contract_name": "Cosigner",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_opHash",
+          "type": "bytes32"
+        },
+        {
+          "name": "_required",
+          "type": "uint256"
+        }
+      ],
+      "name": "consumeOperation",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1512568656938
+}

@@ -1,0 +1,13 @@
+{
+  "contract_name": "Stub",
+  "abi": [
+    {
+      "payable": false,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x6060604052346000575b603d8060166000396000f30060606040525b34600057600f5b5b565b0000a165627a7a72305820b86558e71a605e35560752cb29f4c7521cfa2bb73f63cb8949b51fff265d19e00029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1512568656940
+}

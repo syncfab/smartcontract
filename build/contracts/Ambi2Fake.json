@@ -1,0 +1,78 @@
+{
+  "contract_name": "Ambi2Fake",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_role",
+          "type": "bytes32"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "setAllowed",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "name": "_role",
+          "type": "bytes32"
+        },
+        {
+          "name": "_to",
+          "type": "address"
+        }
+      ],
+      "name": "hasRole",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_address",
+          "type": "address"
+        },
+        {
+          "name": "_owner",
+          "type": "address"
+        }
+      ],
+      "name": "claimFor",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b610171806100196000396000f300606060405263ffffffff60e060020a600035041663055b9e08811461003a5780632d3e579a1461005f578063b4ba9e1114610096575b610000565b346100005761005d600160a060020a0360043581169060243590604435166100c9565b005b3461000057610082600160a060020a036004358116906024359060443516610105565b604080519115158252519081900360200190f35b3461000057610082600160a060020a036004358116906024351661013c565b604080519115158252519081900360200190f35b600160a060020a038084166000908152602081815260408083208684528252808320938516835292905220805460ff191660011790555b505050565b600160a060020a0380841660009081526020818152604080832086845282528083209385168352929052205460ff165b9392505050565b60015b929150505600a165627a7a723058204faa0365391fd0b290eb2cbc56af715807d485258255ae12ab5f9548140184b30029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1512568656938
+}

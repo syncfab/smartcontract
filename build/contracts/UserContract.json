@@ -1,0 +1,52 @@
+{
+  "contract_name": "UserContract",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "_target",
+          "type": "address"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "forwarding",
+      "outputs": [
+        {
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "target",
+      "outputs": [
+        {
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "payable": true,
+      "type": "fallback"
+    }
+  ],
+  "unlinked_binary": "0x60606040526000805460a060020a60ff021916905534610000575b6101bd806100296000396000f3006060604052361561003b5763ffffffff60e060020a60003504166319ab453c81146100e15780633ef000b4146100fc578063d4b839921461011d575b6100df5b60005460a060020a900460ff1615610056576100dd565b6000805474ff0000000000000000000000000000000000000000191660a060020a17808255604051600160a060020a0390911691349136908083838082843782019150509250505060006040518083038185876185025a03f19250505015156100be57610000565b6000805474ff0000000000000000000000000000000000000000191690555b565b005b34610000576100df600160a060020a0360043516610146565b005b3461000057610109610172565b604080519115158252519081900360200190f35b346100005761012a610182565b60408051600160a060020a039092168252519081900360200190f35b6000805473ffffffffffffffffffffffffffffffffffffffff1916600160a060020a0383161790555b50565b60005460a060020a900460ff1681565b600054600160a060020a0316815600a165627a7a72305820d5587366196da4b95d78e29c5daecf7ae8e143964b9d32a2427487571eb7ba360029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1512568656940
+}

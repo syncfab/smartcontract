@@ -1,0 +1,26 @@
+{
+  "name": "syncfab-smartcontract",
+  "version": "2.0.0",
+  "description": "Syncfab smartcontract",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:syncfab/smartcontract.git"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "truffle test",
+    "testrpc": "testrpc",
+    "truffle": "truffle"
+  },
+  "keywords": [
+    "etoken",
+    "etoken2",
+    "ethereum"
+  ],
+  "author": "Syncfab <dev@syncfab.com>",
+  "dependencies": {
+    "ethereumjs-testrpc": "3.0.3",
+    "truffle": "3.1.9"
+  },
+  "devDependencies": {}
+}
