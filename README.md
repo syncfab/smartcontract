@@ -1,13 +1,6 @@
 # SyncFab SmartContract
-EToken2.sol, EToken2Emitter.sol, Ambi2.sol.
+
 =========
-
-# Installation
-
-**NodeJS 6.x+ along with build-essential must be installed as a prerequisite.**
-```
-$ npm install
-```
 
 # Running tests
 
@@ -15,3 +8,9 @@ $ npm install
 $ npm run testrpc
 $ npm run test
 ```
+
+![](https://image.prntscr.com/image/sGG79jOMTFmWdkCvrbqsIA.png)        
+![](https://image.prntscr.com/image/O3q5RS4ZScyn1xlgV6rEPQ.png)
+![](https://image.prntscr.com/image/wlLHucRYRAK1eichSKgjTg.png)
+![](https://image.prntscr.com/image/zPgcDc5mRJaEMK3u8LhbDw.png)
+![](https://image.prntscr.com/image/0yeIsCO4T_2pF_NQsSGwfQ.png)
