@@ -12,7 +12,7 @@ const Asset = artifacts.require('./Asset.sol');
 
 const assetBase = require('./assetBase');
 
-contract('Asset', function(accounts) {
+contract('AssetWithRevertx', function(accounts) {
   const SYMBOL = 'TEST';
   const SYMBOL2 = 'TEST2';
   const NAME = 'Test Name';
