@@ -3,6 +3,7 @@ The MFG Token is a utility token used on the SyncFab platform to reward purchase
 
 ![](https://i.imgur.com/atJ8w8a.png)
 
+```
 ./contracts folder contains all the contracts that are related to token generation.
 ./tests folder contains the same contracts plus some others for reference, and tests.
 ./contracts/standalone folder contains following 6 contracts as a single, standalone files for easier compilation.
@@ -25,6 +26,9 @@ It uses Ambi2 for admin access checks.
 It talks to AssetProxy (deployed separately for every asset) which in turn talks to Asset[AssetWithRevert] (deployed separately).
 
 AssetProxy is the ERC20 to EToken2 interface contract, entry point for asset users.
+```
+
+
 # Running tests
 
 ```
