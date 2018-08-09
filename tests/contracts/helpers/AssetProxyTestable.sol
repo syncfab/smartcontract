@@ -1,8 +1,8 @@
 pragma solidity 0.4.8;
 
-import '../AssetProxy.sol';
+import '../SyncFab.sol';
 
-contract AssetProxyTestable is AssetProxy {
+contract AssetProxyTestable is SyncFab {
     modifier onlyAssetOwner() {
         _;
     }

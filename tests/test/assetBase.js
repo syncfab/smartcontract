@@ -1214,7 +1214,7 @@ module.exports = accounts => {
       holder = userContract.address;
       return userContract.init(this.assetProxy.address);
     }).then(() => {
-      userContract = this.AssetProxy.at(userContract.address);
+      userContract = this.SyncFab.at(userContract.address);
       return this.assetProxy.transfer(holder, VALUE);
     }).then(() => {
       return userContract.transfer(holder2, VALUE);
@@ -1238,7 +1238,7 @@ module.exports = accounts => {
       holder = userContract.address;
       return userContract.init(this.assetProxy.address);
     }).then(() => {
-      userContract = this.AssetProxy.at(userContract.address);
+      userContract = this.SyncFab.at(userContract.address);
       return this.assetProxy.transfer(holder, VALUE);
     }).then(() => {
       return userContract.transferToICAP(ICAP, VALUE);
@@ -1262,7 +1262,7 @@ module.exports = accounts => {
       holder = userContract.address;
       return userContract.init(this.assetProxy.address);
     }).then(() => {
-      userContract = this.AssetProxy.at(userContract.address);
+      userContract = this.SyncFab.at(userContract.address);
       return userContract.approve(holder2, VALUE);
     }).then(() => {
       return this.etoken2.allowance.call(holder, holder2, SYMBOL);
@@ -1282,7 +1282,7 @@ module.exports = accounts => {
       holder = userContract.address;
       return userContract.init(this.assetProxy.address);
     }).then(() => {
-      userContract = this.AssetProxy.at(userContract.address);
+      userContract = this.SyncFab.at(userContract.address);
       return this.assetProxy.approve(holder, VALUE);
     }).then(() => {
       return userContract.transferFrom(owner, holder2, VALUE);

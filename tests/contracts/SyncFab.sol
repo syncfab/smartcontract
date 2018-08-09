@@ -34,7 +34,7 @@ import './helpers/Bytes32.sol';
  * Note: all the non constant functions return false instead of throwing in case if state change
  * didn't happen yet.
  */
-contract AssetProxy is ERC20, AssetProxyInterface, Bytes32 {
+contract SyncFab is ERC20, AssetProxyInterface, Bytes32 {
     // Assigned EToken2, immutable.
     EToken2 public etoken2;
 

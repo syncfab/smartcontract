@@ -1,7 +1,7 @@
 pragma solidity 0.4.8;
 
 import './AssetInterface.sol';
-import {AssetProxyInterface as AssetProxy} from './AssetProxyInterface.sol';
+import {AssetProxyInterface as SyncFab} from './AssetProxyInterface.sol';
 
 /**
  * @title EToken2 Asset implementation contract.
@@ -15,7 +15,7 @@ import {AssetProxyInterface as AssetProxy} from './AssetProxyInterface.sol';
  */
 contract Asset is AssetInterface {
   // Assigned asset proxy contract, immutable.
-  AssetProxy public proxy;
+  SyncFab public proxy;
 
   /**
    * Only assigned proxy is allowed to call.
@@ -36,7 +36,7 @@ contract Asset is AssetInterface {
    * @return success.
    * @dev function is final, and must not be overridden.
    */
-  function init(AssetProxy _proxy) returns (bool) {
+  function init(SyncFab _proxy) returns (bool) {
     if (address(proxy) != 0x0) {
       return false;
     }

@@ -7,12 +7,12 @@ const RegistryICAPTestable = artifacts.require('./RegistryICAPTestable.sol');
 const UserContract = artifacts.require('./UserContract.sol');
 const Stub = artifacts.require('./Stub.sol');
 const Listener = artifacts.require('./Listener.sol');
-const AssetProxy = artifacts.require('./AssetProxy.sol');
+const SyncFab = artifacts.require('./SyncFab.sol');
 const Asset = artifacts.require('./Asset.sol');
 
 const assetBase = require('./assetBase');
 
-contract('AssetWithRevertx', function(accounts) {
+contract('AssetWithRevert', function(accounts) {
   const SYMBOL = 'TEST';
   const SYMBOL2 = 'TEST2';
   const NAME = 'Test Name';
@@ -28,10 +28,10 @@ contract('AssetWithRevertx', function(accounts) {
   before('setup others', function() {
     this.Listener = Listener;
     this.UserContract = UserContract;
-    this.AssetProxy = AssetProxy;
+    this.SyncFab = SyncFab;
     return EToken2Testable.deployed().then(instance => {
       this.etoken2 = instance;
-      return AssetProxy.deployed();
+      return SyncFab.deployed();
     }).then(instance => {
       this.assetProxy = instance;
       return Asset.deployed();

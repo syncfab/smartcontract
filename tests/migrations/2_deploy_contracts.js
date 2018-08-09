@@ -1,4 +1,4 @@
-const AssetProxy = artifacts.require('./AssetProxy.sol');
+const SyncFab = artifacts.require('./SyncFab.sol');
 const AssetProxyTestable = artifacts.require('./AssetProxyTestable.sol');
 const Asset = artifacts.require('./Asset.sol');
 const MultiAssetOwner = artifacts.require('./MultiAssetOwner.sol');
@@ -13,7 +13,7 @@ const Ambi2Fake = artifacts.require('./Ambi2Fake.sol');
 
 module.exports = function(deployer) {
   deployer.deploy(Asset);
-  deployer.deploy(AssetProxy);
+  deployer.deploy(SyncFab);
   deployer.deploy(AssetProxyTestable);
   deployer.deploy(EToken2Testable).then(() => deployer.deploy(MultiAssetOwner, EToken2Testable.address));
   deployer.deploy(EToken2Emitter);

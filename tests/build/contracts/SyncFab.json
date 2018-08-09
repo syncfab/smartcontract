@@ -1,5 +1,5 @@
 {
-  "contract_name": "AssetProxy",
+  "contract_name": "SyncFab",
   "abi": [
     {
       "constant": true,
