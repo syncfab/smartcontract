@@ -23,9 +23,9 @@ EventsHistory uses Ambi for admin access checks.
 It talks to RegistryICAP to resolve ICAP addresses.
 RegistryICAP uses Ambi for admin access checks.
 It uses Ambi2 for admin access checks.
-It talks to AssetProxy (deployed separately for every asset) which in turn talks to Asset[AssetWithRevert] (deployed separately).
+It talks to SyncFab (deployed separately for every asset) which in turn talks to Asset[AssetWithRevert] (deployed separately).
 
-AssetProxy is the ERC20 to EToken2 interface contract, entry point for asset users.
+SyncFab is the ERC20 to EToken2 interface contract, entry point for asset users.
 ```
 
 
